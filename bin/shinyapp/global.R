@@ -1,2 +1,3 @@
 # This is not really necessary.  Only included to illustrate where to load data.
-iris<-read.csv("../../data/iris.csv")
+data <- readRDS("../../data/healthexp.Rds")
+data$Region <- as.factor(data$Region)
